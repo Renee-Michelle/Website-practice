@@ -1,0 +1,103 @@
+/* Document level adjustments */
+html {
+  font-family: muli;
+  font-weight: 400;
+  font-size:62.5%; 
+}
+@media screen and (max-width: 980px) and (pointer: none) { 
+  html {
+    font-family: muli;
+    font-weight: 400;
+    font-size:20px; 
+  }
+ 
+}
+
+/* Type will scale with document */
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 2rem;
+}
+.info-link-h2{
+  right: 0rem;
+  top: 0rem;
+  grid-column: 2/3;
+  justify-self: end;
+  width: max-content;
+}
+#p-header{
+  line-height: 1.6;
+  margin-top: 3.5rem;
+  grid-column: 1/3;
+  font-size: 2.5rem;
+}
+#p-indented-header{
+    line-height: 1.6;
+    font-size: 2.5rem;
+    text-indent: 5rem;
+    grid-column: 1/3;
+    text-align: justify;
+    
+}
+footer {
+  padding: 2rem;
+  text-align: left;
+}
+.contact-footer-div{
+  margin-bottom: 3rem;
+}
+#container{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* card or item styling */
+.item {
+    flex: 0 1 74rem; /* no stretching*/
+    margin: 0.5rem;
+}
+img{
+  width: 100%;
+}
+img:hover {
+  opacity: .5;
+  transition: .9s;
+}
+.project-h2-link{
+  margin:0.5rem;
+}
+
+/*Link styling  */
+a{
+  font-size: 2.5rem;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+  opacity: .5;
+  transition: .9s;
+}
+a:visited { text-decoration: none; color: black; }
+a:hover { text-decoration: none; color: black; }
+a:focus { text-decoration: none; color:black; }
